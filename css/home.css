@@ -1,4 +1,4 @@
-.principale{
+.principal_home{
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -7,7 +7,6 @@
     left: 50%;
     transform: translate(-50%);
     z-index: 0;
-    margin-top: 1%;
 }
 
 .navbar1{
@@ -41,8 +40,9 @@
     height: 300px;
     border-style: solid; border-radius: 28px; 
     border-color: rgb(37, 80, 96);
-    align-content: end;
+    justify-content: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .input_mapa{
