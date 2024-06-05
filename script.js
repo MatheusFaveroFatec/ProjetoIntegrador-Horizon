@@ -42,7 +42,7 @@ function cadastra(){
         let novoUsuario = {"id": proximoId, "nome": nome, "cpf": cpf, "email": email, "endereco": endereco, "cep": cep, "tipo_sanguineo": tiposanguineo, "senha": senha};
         banco.push(novoUsuario);
         localStorage.setItem("banco", JSON.stringify(banco));
-        window.open("Login.html");
+        window.location.replace("Login.html");
     }
     else{
         alert("JA EXISTE");
@@ -60,7 +60,7 @@ function loga(){
         for(i = 0; i < banco.length; i++){
             if(cpf == banco[i].cpf && email == banco[i].email && senha == banco[i].senha){
                 alert("Bem-vindo!");
-                window.open("index.html");
+                window.location.replace("index.html");
                 break;
             }
         }

@@ -1,0 +1,104 @@
+body {
+    background-color: #D33741;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.header {
+    padding: 10px 20px; /* Espaçamento interno */
+    display: flex;
+    justify-content: flex-end; /* Alinha os links à direita */
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.header a, .header button {
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    margin-left: 30px; /* Espaçamento entre os links */
+    font-size: 20px; /* Aumenta o tamanho da fonte */
+    padding: 15px 25px; /* Aumenta o padding para equilibrar */
+    background-color: #D33741; /* Fundo vermelho */
+    
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px; /* Espaçamento para compensar a altura da barra de navegação fixa */
+}
+
+.fotos {
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.left-column {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-column {
+    margin-left: 20px;
+}
+
+.left-column img
+{
+    height: 360px;
+    width: 430px;
+    border-radius: 30px;
+}
+
+
+.right-column img
+{
+    height: 360px;
+    width: 430px;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+.left-column h2
+{
+    color: #D33741;
+}
+
+.right-column
+{
+    color: #D33741;
+}
+
+
+.horario-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+
+
+
+.horario-buttons button {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
