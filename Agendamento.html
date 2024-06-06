@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sytle.css">
-    <link rel="stylesheet" href="home">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/agendamento.css">
+    <link href="./css/calendario.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Agendamento</title>
 </head>
 <body>
@@ -28,25 +31,68 @@
             </a>
         </div>
     </header>
-    
-    <div class="container">
-        <div class="fotos">
-            <div class="left-column">
-                <h2>Agende sua doação</h2>
-                <img class="calendario" src="calendario-2020.png" alt="">
+
+    <main style="margin-top: 12%;" class="principal">
+        <!--CALENDARIO-->
+        <div style="width: 50%; padding: 3%; align-items: center; justify-content: center; text-align: center;">
+            <h1>Agende sua doação</h1>
+            <div id="calendario">
+                <div id="header">
+                <div style="width: 100%; display: flex; gap: 1%; align-self: center; justify-content: center;">
+                    <button style="transform: rotateZ(90deg)" id="backButton"><i class="fa-solid fa-angle-down"></i></button>
+                    <div style="text-align: center; width: 50%; vertical-align: middle; line-height: 75px; " id="monthDisplay"></div>
+                    <button style="transform: rotateZ(-90deg);" id="nextButton"><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+                    
+                </div>
+        
+                <div id="weekdays">
+                <div>DOM</div>
+                <div>SEG</div>
+                <div>TER</div>
+                <div>QUAR</div>
+                <div>QUI</div>
+                <div>SEX</div>
+                <div>SAB</div>
+                </div>
+        
+        
+                <!-- div dinamic -->
+                <div id="calendar" ></div>
+        
+            
             </div>
-            <div class="horario-buttons">
-                <button> 9:00 - 12:00</button>
-                <button> 10:00 - 13:00</button>
-                <button>  8:00 - 11:00  </button>
-                <button> 11:00 - 14:00</button>
-                <button> 12:00 - 15:00</button>
+        
+            <div id="newEventModal">
+            <h2>Nova Doacao</h2>
+        
+            <input id="eventTitleInput" placeholder="Event Title"/>
+        
+            <button id="saveButton"> Salvar</button>
+            <button id="cancelButton">Cancelar</button>
             </div>
-            <div class="right-column">
-                <h2>Encontre os pontos de coleta mais próximos</h2>
-                <img src="google-maps-e1707316052388.webp" alt="">
+        
+            <div id="deleteEventModal">
+            <h2>Evento</h2>
+        
+            <div id="eventText"></div><br>
+        
+        
+            <button id="deleteButton">Deletar</button>
+            <button id="closeButton">Fechar</button>
             </div>
+        
+            <div id="modalBackDrop"></div>
         </div>
-    </div>
+
+
+        <div>
+
+        </div>
+    </main>
+    
+    
+
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
