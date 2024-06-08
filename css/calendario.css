@@ -26,8 +26,10 @@ html{
   
 }
 
-h1{
-
+main h1{
+  color: #BB2029;
+  margin: 0;
+  margin-bottom: 7%;
 }
 
 button {
@@ -58,6 +60,10 @@ button {
   transform: scale(0.4);
   width: 770px;
   margin: -31.55%;
+  margin-top: -57%;
+  margin-bottom: -55%;
+  margin-left: -53%;
+  margin-right: -50%;
 }
 #weekdays {
   width: 100%;
@@ -75,9 +81,9 @@ button {
   flex-wrap: wrap;
 }
 .day {
-  width: 100px;
+  width: 97.5px;
   padding: 1%;
-  height: 100px;
+  height: 97.5px;
   cursor: pointer;
   box-sizing: border-box;
   background-color: var(--color-day);
@@ -159,4 +165,28 @@ button {
   position: absolute;
   background-color: rgba(0,0,0,0.8);
 }
-
+.lado_esquerdo{
+  width: 100%;
+  height: 350px;
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;
+}
+.conjunto_botoes{
+  display: flex;
+  width: 25%;
+  height: auto;
+  gap: 3%;
+}
+.conjunto_botoes button{
+  width: 100%;
+  padding: 9%;
+  background-color: white;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(132, 177, 255);
+  color: rgb(0, 81, 221);
+  font-weight: 700;
+  box-shadow: none;
+}
