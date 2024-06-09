@@ -1,4 +1,5 @@
 document.getElementById('binaryForm').addEventListener('submit', function(event) {
+    event.preventDefault();
     let formValid = true;
     let options = ['option1', 'option2', 'option3', 'option4', 'option5', 'option6'];
     
@@ -17,9 +18,12 @@ document.getElementById('binaryForm').addEventListener('submit', function(event)
     });
 
     let confirmCheckbox = document.getElementById('confirmCheckbox').checked;
-
+    console.log(formValid, confirmCheckbox);
     if (!formValid || !confirmCheckbox) {
         alert('Por favor, preencha todas as opções e confirme que revisou suas escolhas.');
-        event.preventDefault();
     }
+    else if (formValid && confirmCheckbox){
+        window.location.replace("Agendamento.html");
+    }
+        
 });
