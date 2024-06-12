@@ -3,9 +3,11 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-color: #D33741;
 }
 
-.container {
+.triagem {
+    background-color: #D33741;
     width: 60%;
     margin: 50px auto;
     margin-top: 10%;

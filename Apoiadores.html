@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/apoiadores.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
     <header class="navbar1">
@@ -24,9 +26,13 @@
         </div>
         
         <div style="width: 10%; display: flex; flex-direction: row-reverse;">
-            <a style="display: flex; align-items: center;" href="Cadastro.html">
+            <a style="display: flex; align-items: center;" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i style="font-size: 250%; color: white;" class="fa-regular fa-user"></i>
             </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="Cadastro.html">Login/Cadastro</a>
+              <a class="dropdown-item" href="Historico.html">Historico de Doações</a>
+            </div>
         </div>
     </header>
     
@@ -63,6 +69,6 @@
         </div>
     </div>
 
-
+    <script src="scripts/script.js"></script>
 </body>
 </html>

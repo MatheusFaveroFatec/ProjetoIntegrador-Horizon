@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/agendamento.css">
-    <link href="./css/calendario.css" rel="stylesheet">
+    <link href="css/calendario.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Agendamento</title>
 </head>
@@ -25,8 +25,8 @@
         </div>
         
         <div style="width: 10%; display: flex; flex-direction: row-reverse;">
-            <a style="display: flex; align-items: center;" href="Cadastro.html">
-              <i style="font-size: 250%; color: white;" class="fa-regular fa-user"></i>
+            <a style="display: flex; align-items: center;" href="Cadastro.html" id="icone">
+                <i style="font-size: 250%; color: white;" class="fa-regular fa-user"></i>
             </a>
         </div>
     </header>
@@ -47,13 +47,13 @@
                     </div>
             
                     <div id="weekdays">
-                    <div>DOM</div>
-                    <div>SEG</div>
-                    <div>TER</div>
-                    <div>QUAR</div>
-                    <div>QUI</div>
-                    <div>SEX</div>
-                    <div>SAB</div>
+                        <div>DOM</div>
+                        <div>SEG</div>
+                        <div>TER</div>
+                        <div>QUAR</div>
+                        <div>QUI</div>
+                        <div>SEX</div>
+                        <div>SAB</div>
                     </div>
             
             
@@ -63,13 +63,13 @@
                 
                 </div>
                 <div style="display: flex; flex-direction: column;" class="conjunto_botoes">
-                    <button>09:00</button>
-                    <button>10:00</button>
-                    <button>11:00</button>
-                    <button>12:00</button>
-                    <button>13:00</button>
-                    <button>14:00</button>
-                    <button>15:00</button>
+                    <button onclick="alerta()">09:00</button>
+                    <button onclick="alerta()">10:00</button>
+                    <button onclick="alerta()">11:00</button>
+                    <button onclick="alerta()">12:00</button>
+                    <button onclick="alerta()">13:00</button>
+                    <button onclick="alerta()">14:00</button>
+                    <button onclick="alerta()">15:00</button>
                 </div>
             </div>
             
@@ -100,16 +100,31 @@
 
         <div style="width: 50%; padding: 3%; text-align: center;">
             <h1>Encontre os pontos de coleta mais próximos</h1>
-            <div style="margin-bottom: -3%;" class="mapa">
+            <div style="margin-bottom: -3%; align-self: center;" class="quadrado">
                 <img style=" max-width: 125%; max-height: 125%; align-self: center;" src="img/complexo do alemão edit.png" alt="mapa">
             </div>
               
-              <input style="margin-top: -4%; padding: 7px;" class="input_mapa" type="text">
+              <input style="margin-top: -4%; padding: 7px;" class="input_quadrado" type="text">
         </div>
     </main>
-    
-    
 
     <script src="./scripts/main.js"></script>
+    <script>
+        function alerta(){
+            alert("Doação marcada com sucesso!");
+            window.location.replace("Historico.html");
+        }
+    </script>
+
+    <script src="scripts/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
 </html>
